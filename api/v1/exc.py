@@ -3,5 +3,13 @@
 from werkzeug.exceptions import HTTPException
 
 class OauthError(HTTPException):
-    description = "invalid error"
-    code = 400
+    """900* `Oauth Error`
+
+    Raise if there is any error encountered during Oauth handling
+    or server
+    """
+
+    code = 900
+    description = (
+        "Oauth error"
+    )

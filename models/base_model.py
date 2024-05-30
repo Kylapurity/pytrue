@@ -9,7 +9,7 @@ date_format = "%Y-%m-%dT%H:%M:%S.%f"
 class BaseModel():
     """ Base Model """
 
-    id = db.Column(db.String(60), primary_key=True)
+    id = db.Column(db.String(60), primary_key=True, index=True)
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
     updated_at = db.Column(db.DateTime, default=datetime.utcnow)
 
